@@ -414,5 +414,5 @@ def delete_job(job_id):
 if __name__ == '__main__':
     print("Starting AI Resume Analyzer API...")
     print("Note: SpaCy is optional. Skill extraction works without it, but NLP features are enhanced if SpaCy is installed.")
-    app.run(debug=True, port=5000)
+    app.run()
 
