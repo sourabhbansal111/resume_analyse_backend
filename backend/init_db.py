@@ -11,161 +11,162 @@ def init_sample_data():
     companies = [
     {
         'name': 'Microsoft',
-        'description': 'Global leader in enterprise software, cloud computing, and AI solutions.',
-        'logo_url': 'https://logo.clearbit.com/microsoft.com',
+        'description': 'Enterprise software, cloud computing, and AI solutions provider.',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/microsoft.svg',
         'website': 'https://microsoft.com'
     },
     {
         'name': 'Google',
-        'description': 'Technology company focused on search, cloud computing, and artificial intelligence.',
-        'logo_url': 'https://logo.clearbit.com/google.com',
+        'description': 'Search, cloud computing, and artificial intelligence company.',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/google.svg',
         'website': 'https://google.com'
     },
     {
         'name': 'Meta',
-        'description': 'Social media, virtual reality, and AI-driven digital platforms company.',
-        'logo_url': 'https://logo.clearbit.com/meta.com',
+        'description': 'Social media, virtual reality, and AI-driven digital platforms.',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/meta.svg',
         'website': 'https://meta.com'
     },
     {
         'name': 'Amazon',
-        'description': 'E-commerce and cloud computing company powering global digital infrastructure.',
-        'logo_url': 'https://logo.clearbit.com/amazon.com',
+        'description': 'E-commerce and cloud computing company.',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/amazon.svg',
         'website': 'https://amazon.com'
     },
     {
         'name': 'Apple',
-        'description': 'Consumer electronics and software company known for premium ecosystem products.',
-        'logo_url': 'https://logo.clearbit.com/apple.com',
+        'description': 'Consumer electronics and software ecosystem company.',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/apple.svg',
         'website': 'https://apple.com'
     },
     {
         'name': 'Netflix',
-        'description': 'Streaming platform operating large-scale distributed content systems.',
-        'logo_url': 'https://logo.clearbit.com/netflix.com',
+        'description': 'Streaming platform operating large-scale distributed systems.',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/netflix.svg',
         'website': 'https://netflix.com'
     },
     {
         'name': 'Tesla',
-        'description': 'Electric vehicle and AI-driven robotics and automation company.',
-        'logo_url': 'https://logo.clearbit.com/tesla.com',
+        'description': 'Electric vehicle and AI-driven automation company.',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/tesla.svg',
         'website': 'https://tesla.com'
     },
     {
         'name': 'Uber',
         'description': 'Real-time ride-sharing and mobility technology platform.',
-        'logo_url': 'https://logo.clearbit.com/uber.com',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/uber.svg',
         'website': 'https://uber.com'
     },
     {
         'name': 'Airbnb',
         'description': 'Online marketplace for lodging and travel experiences.',
-        'logo_url': 'https://logo.clearbit.com/airbnb.com',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/airbnb.svg',
         'website': 'https://airbnb.com'
     },
     {
         'name': 'Spotify',
-        'description': 'Music streaming service with large-scale recommendation systems.',
-        'logo_url': 'https://logo.clearbit.com/spotify.com',
+        'description': 'Music streaming service with recommendation systems.',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/spotify.svg',
         'website': 'https://spotify.com'
     },
     {
         'name': 'Adobe',
-        'description': 'Creative software and cloud-based digital media solutions provider.',
-        'logo_url': 'https://logo.clearbit.com/adobe.com',
+        'description': 'Creative software and digital media solutions provider.',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/adobe.svg',
         'website': 'https://adobe.com'
     },
     {
         'name': 'Salesforce',
-        'description': 'Cloud-based CRM and enterprise business platforms provider.',
-        'logo_url': 'https://logo.clearbit.com/salesforce.com',
+        'description': 'Cloud-based CRM and enterprise business platforms.',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/salesforce.svg',
         'website': 'https://salesforce.com'
     },
     {
         'name': 'IBM',
-        'description': 'Enterprise technology company focused on AI, cloud, and research.',
-        'logo_url': 'https://logo.clearbit.com/ibm.com',
+        'description': 'Enterprise technology company focused on AI and cloud.',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/ibm.svg',
         'website': 'https://ibm.com'
     },
     {
         'name': 'Oracle',
         'description': 'Enterprise database systems and cloud infrastructure provider.',
-        'logo_url': 'https://logo.clearbit.com/oracle.com',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/oracle.svg',
         'website': 'https://oracle.com'
     },
     {
         'name': 'NVIDIA',
         'description': 'Leader in GPU computing and AI acceleration technologies.',
-        'logo_url': 'https://logo.clearbit.com/nvidia.com',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/nvidia.svg',
         'website': 'https://nvidia.com'
     },
     {
         'name': 'LinkedIn',
-        'description': 'Professional networking platform powered by data and analytics.',
-        'logo_url': 'https://logo.clearbit.com/linkedin.com',
+        'description': 'Professional networking and data-driven hiring platform.',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/linkedin.svg',
         'website': 'https://linkedin.com'
     },
     {
         'name': 'Stripe',
         'description': 'Online payment processing and financial APIs provider.',
-        'logo_url': 'https://logo.clearbit.com/stripe.com',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/stripe.svg',
         'website': 'https://stripe.com'
     },
     {
         'name': 'Atlassian',
         'description': 'Developer productivity and collaboration tools company.',
-        'logo_url': 'https://logo.clearbit.com/atlassian.com',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/atlassian.svg',
         'website': 'https://atlassian.com'
     },
     {
         'name': 'Snowflake',
         'description': 'Cloud-native data warehousing and analytics platform.',
-        'logo_url': 'https://logo.clearbit.com/snowflake.com',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/snowflake.svg',
         'website': 'https://snowflake.com'
     },
     {
         'name': 'PayPal',
-        'description': 'Global digital payments and financial technology company.',
-        'logo_url': 'https://logo.clearbit.com/paypal.com',
+        'description': 'Global digital payments and fintech company.',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/paypal.svg',
         'website': 'https://paypal.com'
     },
     {
         'name': 'Intel',
         'description': 'Semiconductor company designing processors and system software.',
-        'logo_url': 'https://logo.clearbit.com/intel.com',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/intel.svg',
         'website': 'https://intel.com'
     },
     {
         'name': 'SAP',
-        'description': 'Enterprise resource planning and business software provider.',
-        'logo_url': 'https://logo.clearbit.com/sap.com',
+        'description': 'Enterprise business software and ERP solutions provider.',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/sap.svg',
         'website': 'https://sap.com'
     },
     {
         'name': 'TechCorp',
-        'description': 'Software solutions company focusing on scalable application development.',
-        'logo_url': 'https://logo.clearbit.com/techcorp.com',
+        'description': 'Software solutions company focusing on scalable applications.',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/code.svg',
         'website': 'https://techcorp.com'
     },
     {
         'name': 'DataFlow Inc',
         'description': 'Data analytics and machine learning solutions provider.',
-        'logo_url': 'https://logo.clearbit.com/dataflow.com',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/databricks.svg',
         'website': 'https://dataflow.com'
     },
     {
         'name': 'CloudSystems',
-        'description': 'Cloud infrastructure management and DevOps services company.',
-        'logo_url': 'https://logo.clearbit.com/cloudsystems.com',
+        'description': 'Cloud infrastructure and DevOps services company.',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/amazonaws.svg',
         'website': 'https://cloudsystems.com'
     },
     {
         'name': 'WebDev Studio',
         'description': 'Agency specializing in full-stack web application development.',
-        'logo_url': 'https://logo.clearbit.com/webdevstudio.com',
+        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/react.svg',
         'website': 'https://webdevstudio.com'
     }
 ]
+
 
     
     # Sample jobs
