@@ -21,41 +21,160 @@ class SkillExtractor:
         
         # Common technical skills database
         self.technical_skills = {
-            # Programming Languages
-            'python', 'java', 'javascript', 'typescript', 'c++', 'c#', 'go', 'rust', 'kotlin', 'swift',
-            'php', 'ruby', 'scala', 'r', 'matlab', 'perl', 'shell', 'bash', 'powershell',
-            
-            # Web Technologies
-            'html', 'css', 'react', 'angular', 'vue', 'node.js', 'express', 'django', 'flask',
-            'spring', 'asp.net', 'laravel', 'rails', 'next.js', 'nuxt.js',
-            
-            # Databases
-            'sql', 'mysql', 'postgresql', 'mongodb', 'redis', 'oracle', 'sqlite', 'cassandra',
-            'elasticsearch', 'dynamodb', 'neo4j',
-            
-            # Cloud & DevOps
-            'aws', 'azure', 'gcp', 'docker', 'kubernetes', 'jenkins', 'git', 'ci/cd',
-            'terraform', 'ansible', 'chef', 'puppet', 'linux', 'unix',
-            
-            # Data Science & ML
-            'machine learning', 'deep learning', 'tensorflow', 'pytorch', 'keras', 'scikit-learn',
-            'pandas', 'numpy', 'matplotlib', 'seaborn', 'jupyter', 'data analysis',
-            'natural language processing', 'nlp', 'computer vision', 'neural networks',
-            
-            # Mobile
-            'android', 'ios', 'react native', 'flutter', 'xamarin',
-            
-            # Other Tools
-            'git', 'github', 'gitlab', 'jira', 'confluence', 'agile', 'scrum', 'kanban',
-            'rest api', 'graphql', 'microservices', 'api development'
-        }
-        
-        # Soft skills
+
+                # =========================
+                # Programming Languages
+                # =========================
+                'python', 'java', 'javascript', 'typescript', 'c++', 'c', 'c#', 'go', 'rust',
+                'kotlin', 'swift', 'php', 'ruby', 'scala', 'r', 'matlab', 'perl',
+                'shell', 'bash', 'powershell',
+
+                # =========================
+                # Core Computer Science
+                # =========================
+                'data structures', 'algorithms', 'object oriented programming', 'oops',
+                'design patterns', 'system design', 'operating systems',
+                'computer networks', 'dbms',
+                'multithreading', 'concurrency', 'memory management',
+
+                # =========================
+                # Web Fundamentals
+                # =========================
+                'html', 'css', 'sass', 'bootstrap', 'tailwind css',
+                'responsive design', 'cross browser compatibility',
+
+                # =========================
+                # Frontend Frameworks
+                # =========================
+                'react', 'redux', 'next.js',
+                'angular', 'vue', 'nuxt.js',
+                'vite', 'webpack',
+
+                # =========================
+                # Backend Frameworks
+                # =========================
+                'node.js', 'express', 'nestjs',
+                'django', 'django rest framework', 'flask', 'fastapi',
+                'spring', 'spring boot',
+                'asp.net', 'laravel', 'rails',
+
+                # =========================
+                # APIs & Communication
+                # =========================
+                'rest api', 'graphql', 'grpc',
+                'web sockets', 'api development',
+                'authentication', 'authorization',
+                'jwt', 'oauth', 'session management',
+
+                # =========================
+                # Databases (SQL & NoSQL)
+                # =========================
+                'sql', 'mysql', 'postgresql', 'sqlite', 'oracle',
+                'mongodb', 'redis', 'dynamodb', 'cassandra',
+                'elasticsearch', 'neo4j',
+
+                # =========================
+                # Cloud Platforms
+                # =========================
+                'aws', 'azure', 'gcp',
+                'aws ec2', 'aws s3', 'aws rds', 'aws lambda',
+                'cloud functions', 'cloud security',
+                'load balancing', 'auto scaling',
+
+                # =========================
+                # DevOps & Infrastructure
+                # =========================
+                'docker', 'kubernetes',
+                'ci/cd', 'jenkins', 'github actions',
+                'terraform', 'ansible',
+                'nginx', 'apache',
+                'linux', 'unix',
+
+                # =========================
+                # Monitoring & Logging
+                # =========================
+                'prometheus', 'grafana',
+                'elk stack', 'log monitoring',
+
+                # =========================
+                # Testing & Quality Assurance
+                # =========================
+                'unit testing', 'integration testing',
+                'pytest', 'junit',
+                'jest', 'mocha',
+                'selenium', 'cypress',
+                'test driven development', 'tdd', 'bdd',
+
+                # =========================
+                # Data Science & Analytics
+                # =========================
+                'data analysis', 'data preprocessing',
+                'feature engineering',
+                'pandas', 'numpy',
+                'matplotlib', 'seaborn',
+                'jupyter',
+
+                # =========================
+                # Machine Learning & AI
+                # =========================
+                'machine learning', 'deep learning',
+                'supervised learning', 'unsupervised learning',
+                'neural networks',
+                'tensorflow', 'pytorch', 'keras',
+                'scikit-learn',
+                'natural language processing', 'nlp',
+                'computer vision',
+                'transformers', 'hugging face',
+                'llms', 'chatbots',
+                'recommendation systems',
+                'model evaluation', 'model deployment',
+                'mlops',
+
+                # =========================
+                # Mobile Development
+                # =========================
+                'android', 'ios',
+                'react native', 'flutter', 'xamarin',
+
+                # =========================
+                # Security
+                # =========================
+                'web security', 'owasp',
+                'sql injection', 'xss', 'csrf',
+                'encryption', 'hashing',
+
+                # =========================
+                # Version Control & Tools
+                # =========================
+                'git', 'github', 'gitlab',
+                'git workflows', 'pull requests',
+                'code review',
+                'jira', 'confluence',
+
+                # =========================
+                # Software Methodologies
+                # =========================
+                'agile', 'scrum', 'kanban',
+                'microservices', 'monolithic architecture',
+                'serverless architecture'
+            }
+
+            # =========================
+            # Soft Skills
+            # =========================
         self.soft_skills = {
-            'leadership', 'communication', 'teamwork', 'problem solving', 'critical thinking',
-            'project management', 'time management', 'collaboration', 'adaptability',
-            'creativity', 'analytical thinking', 'attention to detail', 'multitasking'
-        }
+                'communication', 'leadership', 'teamwork',
+                'problem solving', 'critical thinking',
+                'analytical thinking',
+                'project management', 'time management',
+                'collaboration', 'adaptability',
+                'creativity', 'attention to detail',
+                'decision making', 'initiative',
+                'ownership', 'conflict resolution',
+                'mentorship', 'presentation skills',
+                'documentation', 'multitasking'
+            }
+
     
     def extract_skills(self, resume_text: str) -> List[str]:
         """

@@ -170,20 +170,122 @@ class JobMatcher:
         tips.append(f"To improve your match for {job_title}, consider learning or highlighting:")
         
         # Categorize missing skills
-        programming_langs = [s for s in missing_skills if any(lang in s.lower() for lang in 
-                          ['python', 'java', 'javascript', 'c++', 'go', 'rust'])]
-        frameworks = [s for s in missing_skills if any(fw in s.lower() for fw in 
-                   ['react', 'angular', 'django', 'flask', 'spring'])]
-        tools = [s for s in missing_skills if any(tool in s.lower() for tool in 
-                ['docker', 'kubernetes', 'aws', 'git', 'jenkins'])]
-        
+
+        programming_langs = [
+            s for s in missing_skills
+            if any(lang in s.lower() for lang in [
+                'python', 'java', 'javascript', 'typescript', 'c++', 'c#',
+                'go', 'rust', 'kotlin', 'swift', 'php', 'ruby', 'scala'
+            ])
+        ]
+
+        core_cs = [
+            s for s in missing_skills
+            if any(cs in s.lower() for cs in [
+                'data structures', 'algorithms', 'oops', 'object oriented',
+                'system design', 'operating systems', 'dbms', 'computer networks'
+            ])
+        ]
+
+        frontend = [
+            s for s in missing_skills
+            if any(fe in s.lower() for fe in [
+                'html', 'css', 'react', 'angular', 'vue',
+                'next.js', 'nuxt.js', 'tailwind', 'bootstrap'
+            ])
+        ]
+
+        backend = [
+            s for s in missing_skills
+            if any(be in s.lower() for be in [
+                'node', 'express', 'django', 'flask', 'fastapi',
+                'spring', 'spring boot', 'asp.net', 'laravel', 'rails'
+            ])
+        ]
+
+        databases = [
+            s for s in missing_skills
+            if any(db in s.lower() for db in [
+                'sql', 'mysql', 'postgresql', 'mongodb',
+                'redis', 'oracle', 'sqlite', 'dynamodb', 'cassandra', 'neo4j'
+            ])
+        ]
+
+        cloud_devops = [
+            s for s in missing_skills
+            if any(cd in s.lower() for cd in [
+                'aws', 'azure', 'gcp',
+                'docker', 'kubernetes',
+                'ci/cd', 'jenkins', 'terraform', 'ansible',
+                'linux'
+            ])
+        ]
+
+        testing = [
+            s for s in missing_skills
+            if any(test in s.lower() for test in [
+                'testing', 'pytest', 'junit',
+                'selenium', 'cypress', 'tdd', 'bdd'
+            ])
+        ]
+
+        data_ai = [
+            s for s in missing_skills
+            if any(ai in s.lower() for ai in [
+                'machine learning', 'deep learning', 'nlp',
+                'computer vision', 'tensorflow', 'pytorch',
+                'scikit', 'pandas', 'numpy', 'mlops', 'llm'
+            ])
+        ]
+
+        security = [
+            s for s in missing_skills
+            if any(sec in s.lower() for sec in [
+                'security', 'owasp', 'jwt', 'oauth',
+                'xss', 'csrf', 'sql injection', 'encryption'
+            ])
+        ]
+
+        tools = [
+            s for s in missing_skills
+            if any(tool in s.lower() for tool in [
+                'git', 'github', 'gitlab', 'jira', 'confluence'
+            ])
+        ]
+
+        # ======================
+        # Suggestions Formatter
+        # ======================
         if programming_langs:
-            tips.append(f"• Programming languages: {', '.join(programming_langs[:3])}")
-        if frameworks:
-            tips.append(f"• Frameworks: {', '.join(frameworks[:3])}")
+            tips.append(f"• Programming Languages: {', '.join(programming_langs)}")
+
+        if core_cs:
+            tips.append(f"• Core CS Concepts: {', '.join(core_cs[:3])}")
+
+        if frontend:
+            tips.append(f"• Frontend Skills: {', '.join(frontend[:3])}")
+
+        if backend:
+            tips.append(f"• Backend Frameworks: {', '.join(backend[:3])}")
+
+        if databases:
+            tips.append(f"• Databases: {', '.join(databases[:3])}")
+
+        if cloud_devops:
+            tips.append(f"• Cloud & DevOps: {', '.join(cloud_devops[:3])}")
+
+        if testing:
+            tips.append(f"• Testing & QA: {', '.join(testing[:3])}")
+
+        if data_ai:
+            tips.append(f"• Data Science & AI: {', '.join(data_ai[:3])}")
+
+        if security:
+            tips.append(f"• Security: {', '.join(security[:3])}")
+
         if tools:
-            tips.append(f"• Tools & Technologies: {', '.join(tools[:3])}")
-        
+            tips.append(f"• Tools & Collaboration: {', '.join(tools[:3])}")
+
         # General tips
         if len(missing_skills) > 5:
             tips.append("• Consider taking online courses or certifications for the missing skills")
