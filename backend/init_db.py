@@ -12,7 +12,7 @@ def init_sample_data():
     {
         'name': 'Microsoft',
         'description': 'Enterprise software, cloud computing, and AI solutions provider.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/microsoft.svg',
+        'logo_url': 'https://img.icons8.com/color/96/microsoft.png',
         'website': 'https://microsoft.com'
     },
     {
@@ -30,7 +30,7 @@ def init_sample_data():
     {
         'name': 'Amazon',
         'description': 'E-commerce and cloud computing company.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/amazon.svg',
+        'logo_url': 'https://img.icons8.com/color/96/amazon.png',
         'website': 'https://amazon.com'
     },
     {
@@ -72,25 +72,25 @@ def init_sample_data():
     {
         'name': 'Adobe',
         'description': 'Creative software and digital media solutions provider.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/adobe.svg',
+        'logo_url': 'https://www.adobe.com/federal/assets/svgs/adobe-logo.svg',
         'website': 'https://adobe.com'
     },
     {
         'name': 'Salesforce',
         'description': 'Cloud-based CRM and enterprise business platforms.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/salesforce.svg',
+        'logo_url': 'https://img.icons8.com/color/96/salesforce.png',
         'website': 'https://salesforce.com'
     },
     {
         'name': 'IBM',
         'description': 'Enterprise technology company focused on AI and cloud.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/ibm.svg',
+        'logo_url': 'https://img.icons8.com/color/96/ibm.png',
         'website': 'https://ibm.com'
     },
     {
         'name': 'Oracle',
         'description': 'Enterprise database systems and cloud infrastructure provider.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/oracle.svg',
+        'logo_url': 'https://img.icons8.com/color/96/oracle-logo.png',
         'website': 'https://oracle.com'
     },
     {
@@ -102,7 +102,7 @@ def init_sample_data():
     {
         'name': 'LinkedIn',
         'description': 'Professional networking and data-driven hiring platform.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/linkedin.svg',
+        'logo_url': 'https://img.icons8.com/color/96/linkedin.png',
         'website': 'https://linkedin.com'
     },
     {
@@ -144,7 +144,7 @@ def init_sample_data():
     {
         'name': 'TechCorp',
         'description': 'Software solutions company focusing on scalable applications.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/code.svg',
+        'logo_url': 'https://img.icons8.com/color/96/source-code.png',
         'website': 'https://techcorp.com'
     },
     {
@@ -156,7 +156,7 @@ def init_sample_data():
     {
         'name': 'CloudSystems',
         'description': 'Cloud infrastructure and DevOps services company.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/amazonaws.svg',
+        'logo_url': 'https://img.icons8.com/color/96/cloud.png',
         'website': 'https://cloudsystems.com'
     },
     {
