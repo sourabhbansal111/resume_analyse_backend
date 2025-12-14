@@ -36,7 +36,7 @@ def init_sample_data():
     {
         'name': 'Apple',
         'description': 'Consumer electronics and software ecosystem company.',
-        'logo_url': 'https://img.icons8.com/color/96/apple-logo.png',
+        'logo_url': 'https://www.tailorbrands.com/blog/apple-logo',
         'website': 'https://apple.com'
     },
     {
@@ -54,7 +54,7 @@ def init_sample_data():
     {
         'name': 'Uber',
         'description': 'Real-time ride-sharing and mobility technology platform.',
-        'logo_url': 'https://img.icons8.com/color/96/uber.png',
+        'logo_url': 'https://icons8.com/icon/N1tTKPEhzeBm/uber-app',
         'website': 'https://uber.com'
     },
     {
@@ -108,7 +108,7 @@ def init_sample_data():
     {
         'name': 'Atlassian',
         'description': 'Developer productivity and collaboration tools company.',
-        'logo_url': 'https://img.icons8.com/color/96/atlassian.png',
+        'logo_url': 'https://seeklogo.com/vector-logo/326273/atlassian',
         'website': 'https://atlassian.com'
     },
     {
@@ -126,7 +126,7 @@ def init_sample_data():
     {
         'name': 'Intel',
         'description': 'Semiconductor company designing processors and system software.',
-        'logo_url': 'https://img.icons8.com/color/96/intel.png',
+        'logo_url': 'https://logowik.com/intel-vector-logo-260.html',
         'website': 'https://intel.com'
     },
     {
