@@ -16,7 +16,7 @@ class Config:
     DATABASE_PATH = 'resume_analyzer.db'
     
     # API settings
-    API_BASE_URL = os.environ.get('API_BASE_URL') or 'http://localhost:5000/api'
+    API_BASE_URL = os.environ.get('API_BASE_URL') or 'https://resume-analyse-backend.onrender.com/'
     
     # CORS settings
     CORS_ORIGINS = [
