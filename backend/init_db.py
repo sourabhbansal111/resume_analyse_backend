@@ -36,7 +36,7 @@ def init_sample_data():
     {
         'name': 'Apple',
         'description': 'Consumer electronics and software ecosystem company.',
-        'logo_url': 'https://www.tailorbrands.com/blog/apple-logo',
+        'logo_url': 'https://img.icons8.com/fluent-systems-filled/512w/FFFFFF/mac-os.png',
         'website': 'https://apple.com'
     },
     {
@@ -54,7 +54,7 @@ def init_sample_data():
     {
         'name': 'Uber',
         'description': 'Real-time ride-sharing and mobility technology platform.',
-        'logo_url': 'https://icons8.com/icon/N1tTKPEhzeBm/uber-app',
+        'logo_url': 'https://freelogopng.com/images/all_img/1659761425uber-driver-logo-png.png',
         'website': 'https://uber.com'
     },
     {
@@ -108,7 +108,7 @@ def init_sample_data():
     {
         'name': 'Atlassian',
         'description': 'Developer productivity and collaboration tools company.',
-        'logo_url': 'https://seeklogo.com/vector-logo/326273/atlassian',
+        'logo_url': 'https://media.licdn.com/dms/image/v2/D4E0BAQGeyLL6crkJKg/company-logo_200_200/company-logo_200_200/0/1735593604612/atlassian_logo?e=2147483647&v=beta&t=MDQ6y7lHkorfEXX4hBye7e2Xn1V3FG1tLoKieqjj-Ik',
         'website': 'https://atlassian.com'
     },
     {
@@ -126,7 +126,7 @@ def init_sample_data():
     {
         'name': 'Intel',
         'description': 'Semiconductor company designing processors and system software.',
-        'logo_url': 'https://logowik.com/intel-vector-logo-260.html',
+        'logo_url': 'https://logowik.com/content/uploads/images/t_917_intel.jpg',
         'website': 'https://intel.com'
     },
     {
