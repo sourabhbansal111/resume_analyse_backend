@@ -2,11 +2,11 @@ from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import os
 from werkzeug.utils import secure_filename
-from resume_parser import ResumeParser
-from skill_extractor import SkillExtractor
-from job_matcher import JobMatcher
-from database import Database
-from config import Config
+from .resume_parser import ResumeParser
+from .skill_extractor import SkillExtractor
+from .job_matcher import JobMatcher
+from .database import Database
+from .config import Config
 from auth import hash_password, verify_password, generate_token, verify_token, require_auth, require_admin
 
 app = Flask(__name__)
