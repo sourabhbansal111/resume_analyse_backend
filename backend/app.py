@@ -7,7 +7,7 @@ from .skill_extractor import SkillExtractor
 from .job_matcher import JobMatcher
 from .database import Database
 from .config import Config
-from auth import hash_password, verify_password, generate_token, verify_token, require_auth, require_admin
+from .auth import hash_password, verify_password, generate_token, verify_token, require_auth, require_admin
 
 app = Flask(__name__)
 CORS(app, origins=Config.CORS_ORIGINS)
