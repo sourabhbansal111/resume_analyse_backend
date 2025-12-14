@@ -252,7 +252,21 @@ class JobMatcher:
                 'git', 'github', 'gitlab', 'jira', 'confluence'
             ])
         ]
-
+        softskill = [
+            s for s in missing_skills
+            if any(tool in s.lower() for tool in [
+                'communication', 'leadership', 'teamwork',
+                'problem solving', 'critical thinking',
+                'analytical thinking',
+                'project management', 'time management',
+                'collaboration', 'adaptability',
+                'creativity', 'attention to detail',
+                'decision making', 'initiative',
+                'ownership', 'conflict resolution',
+                'mentorship', 'presentation skills',
+                'documentation', 'multitasking'
+            ])
+        ]
         # ======================
         # Suggestions Formatter
         # ======================
