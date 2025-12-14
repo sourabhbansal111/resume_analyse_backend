@@ -18,13 +18,13 @@ def init_sample_data():
     {
         'name': 'Google',
         'description': 'Search, cloud computing, and artificial intelligence company.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/google.svg',
+        'logo_url': 'https://img.icons8.com/color/96/google-logo.png',
         'website': 'https://google.com'
     },
     {
         'name': 'Meta',
         'description': 'Social media, virtual reality, and AI-driven digital platforms.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/meta.svg',
+        'logo_url': 'https://img.icons8.com/color/96/meta.png',
         'website': 'https://meta.com'
     },
     {
@@ -36,44 +36,38 @@ def init_sample_data():
     {
         'name': 'Apple',
         'description': 'Consumer electronics and software ecosystem company.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/apple.svg',
+        'logo_url': 'https://img.icons8.com/color/96/apple-logo.png',
         'website': 'https://apple.com'
     },
     {
         'name': 'Netflix',
         'description': 'Streaming platform operating large-scale distributed systems.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/netflix.svg',
+        'logo_url': 'https://img.icons8.com/color/96/netflix.png',
         'website': 'https://netflix.com'
     },
     {
         'name': 'Tesla',
         'description': 'Electric vehicle and AI-driven automation company.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/tesla.svg',
+        'logo_url': 'https://img.icons8.com/color/96/tesla-logo.png',
         'website': 'https://tesla.com'
     },
     {
         'name': 'Uber',
         'description': 'Real-time ride-sharing and mobility technology platform.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/uber.svg',
+        'logo_url': 'https://img.icons8.com/color/96/uber.png',
         'website': 'https://uber.com'
     },
     {
         'name': 'Airbnb',
         'description': 'Online marketplace for lodging and travel experiences.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/airbnb.svg',
+        'logo_url': 'https://img.icons8.com/color/96/airbnb.png',
         'website': 'https://airbnb.com'
     },
     {
         'name': 'Spotify',
         'description': 'Music streaming service with recommendation systems.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/spotify.svg',
+        'logo_url': 'https://img.icons8.com/color/96/spotify.png',
         'website': 'https://spotify.com'
-    },
-    {
-        'name': 'Adobe',
-        'description': 'Creative software and digital media solutions provider.',
-        'logo_url': 'https://www.adobe.com/federal/assets/svgs/adobe-logo.svg',
-        'website': 'https://adobe.com'
     },
     {
         'name': 'Salesforce',
@@ -96,7 +90,7 @@ def init_sample_data():
     {
         'name': 'NVIDIA',
         'description': 'Leader in GPU computing and AI acceleration technologies.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/nvidia.svg',
+        'logo_url': 'https://img.icons8.com/color/96/nvidia.png',
         'website': 'https://nvidia.com'
     },
     {
@@ -108,37 +102,37 @@ def init_sample_data():
     {
         'name': 'Stripe',
         'description': 'Online payment processing and financial APIs provider.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/stripe.svg',
+        'logo_url': 'https://img.icons8.com/color/96/stripe.png',
         'website': 'https://stripe.com'
     },
     {
         'name': 'Atlassian',
         'description': 'Developer productivity and collaboration tools company.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/atlassian.svg',
+        'logo_url': 'https://img.icons8.com/color/96/atlassian.png',
         'website': 'https://atlassian.com'
     },
     {
         'name': 'Snowflake',
         'description': 'Cloud-native data warehousing and analytics platform.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/snowflake.svg',
+        'logo_url': 'https://img.icons8.com/color/96/snowflake.png',
         'website': 'https://snowflake.com'
     },
     {
         'name': 'PayPal',
         'description': 'Global digital payments and fintech company.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/paypal.svg',
+        'logo_url': 'https://img.icons8.com/color/96/paypal.png',
         'website': 'https://paypal.com'
     },
     {
         'name': 'Intel',
         'description': 'Semiconductor company designing processors and system software.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/intel.svg',
+        'logo_url': 'https://img.icons8.com/color/96/intel.png',
         'website': 'https://intel.com'
     },
     {
         'name': 'SAP',
         'description': 'Enterprise business software and ERP solutions provider.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/sap.svg',
+        'logo_url': 'https://img.icons8.com/color/96/sap.png',
         'website': 'https://sap.com'
     },
     {
@@ -150,7 +144,7 @@ def init_sample_data():
     {
         'name': 'DataFlow Inc',
         'description': 'Data analytics and machine learning solutions provider.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/databricks.svg',
+        'logo_url': 'https://img.icons8.com/color/96/artificial-intelligence.png',
         'website': 'https://dataflow.com'
     },
     {
@@ -162,10 +156,11 @@ def init_sample_data():
     {
         'name': 'WebDev Studio',
         'description': 'Agency specializing in full-stack web application development.',
-        'logo_url': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/react.svg',
+        'logo_url': 'https://img.icons8.com/color/96/react-native.png',
         'website': 'https://webdevstudio.com'
     }
 ]
+
 
 
     
@@ -198,7 +193,7 @@ def init_sample_data():
             {'company_name':'Spotify','title':'Frontend Developer','description':'Create responsive UI for music platforms.','required_skills':['react','javascript','html','css'],'preferred_skills':['redux','typescript'],'experience_level':'Mid','location':'Stockholm','salary_range':'$100k - $130k'},
 
             # 9
-            {'company_name':'Adobe','title':'UI Engineer','description':'Build reusable UI components.','required_skills':['javascript','react','css'],'preferred_skills':['accessibility','design systems'],'experience_level':'Mid','location':'San Jose, CA','salary_range':'$115k - $145k'},
+            {'company_name':'Meta','title':'UI Engineer','description':'Build reusable UI components.','required_skills':['javascript','react','css'],'preferred_skills':['accessibility','design systems'],'experience_level':'Mid','location':'San Jose, CA','salary_range':'$115k - $145k'},
 
             # 10
             {'company_name':'Salesforce','title':'Software Engineer','description':'Develop CRM cloud features.','required_skills':['java','sql','oop','git'],'preferred_skills':['apex','microservices'],'experience_level':'Mid','location':'San Francisco, CA','salary_range':'$120k - $150k'},
