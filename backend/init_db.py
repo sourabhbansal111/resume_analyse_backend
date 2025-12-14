@@ -9,33 +9,164 @@ def init_sample_data():
     
     # Sample companies
     companies = [
-    {'name': 'Microsoft', 'description': 'Enterprise software, cloud, and AI', 'logo_url': '', 'website': 'https://microsoft.com'},
-    {'name': 'Google', 'description': 'Search, AI, cloud, and large-scale systems', 'logo_url': '', 'website': 'https://google.com'},
-    {'name': 'Meta', 'description': 'Social platforms, AR/VR, AI', 'logo_url': '', 'website': 'https://meta.com'},
-    {'name': 'Amazon', 'description': 'E-commerce and cloud computing', 'logo_url': '', 'website': 'https://amazon.com'},
-    {'name': 'Apple', 'description': 'Consumer devices and software ecosystem', 'logo_url': '', 'website': 'https://apple.com'},
-    {'name': 'Netflix', 'description': 'Streaming and distributed systems', 'logo_url': '', 'website': 'https://netflix.com'},
-    {'name': 'Tesla', 'description': 'EVs, robotics, and AI automation', 'logo_url': '', 'website': 'https://tesla.com'},
-    {'name': 'Uber', 'description': 'Real-time mobility platforms', 'logo_url': '', 'website': 'https://uber.com'},
-    {'name': 'Airbnb', 'description': 'Marketplace and scalable platforms', 'logo_url': '', 'website': 'https://airbnb.com'},
-    {'name': 'Spotify', 'description': 'Music streaming and recommendation systems', 'logo_url': '', 'website': 'https://spotify.com'},
-    {'name': 'Adobe', 'description': 'Creative software and cloud products', 'logo_url': '', 'website': 'https://adobe.com'},
-    {'name': 'Salesforce', 'description': 'CRM and enterprise cloud', 'logo_url': '', 'website': 'https://salesforce.com'},
-    {'name': 'IBM', 'description': 'Enterprise AI and research', 'logo_url': '', 'website': 'https://ibm.com'},
-    {'name': 'Oracle', 'description': 'Databases and enterprise software', 'logo_url': '', 'website': 'https://oracle.com'},
-    {'name': 'NVIDIA', 'description': 'AI computing and GPUs', 'logo_url': '', 'website': 'https://nvidia.com'},
-    {'name': 'LinkedIn', 'description': 'Professional networking and data platforms', 'logo_url': '', 'website': 'https://linkedin.com'},
-    {'name': 'Stripe', 'description': 'Online payments and APIs', 'logo_url': '', 'website': 'https://stripe.com'},
-    {'name': 'Atlassian', 'description': 'Developer productivity tools', 'logo_url': '', 'website': 'https://atlassian.com'},
-    {'name': 'Snowflake', 'description': 'Cloud data warehouse', 'logo_url': '', 'website': 'https://snowflake.com'},
-    {'name': 'PayPal', 'description': 'Digital payments', 'logo_url': '', 'website': 'https://paypal.com'},
-    {'name': 'Intel', 'description': 'Semiconductors and system software', 'logo_url': '', 'website': 'https://intel.com'},
-    {'name': 'SAP', 'description': 'Enterprise business software', 'logo_url': '', 'website': 'https://sap.com'},
-    { 'name': 'TechCorp', 'description': 'Leading technology company specializing in software solutions', 'logo_url': '', 'website': 'https://techcorp.com' }, 
-    { 'name': 'DataFlow Inc', 'description': 'Data analytics and machine learning solutions provider', 'logo_url': '', 'website': 'https://dataflow.com' }, 
-    { 'name': 'CloudSystems', 'description': 'Cloud infrastructure and DevOps services', 'logo_url': '', 'website': 'https://cloudsystems.com' }, 
-    { 'name': 'WebDev Studio', 'description': 'Full-stack web development agency', 'logo_url': '', 'website': 'https://webdevstudio.com' } 
-    ]
+    {
+        'name': 'Microsoft',
+        'description': 'Global leader in enterprise software, cloud computing, and AI solutions.',
+        'logo_url': 'https://logo.clearbit.com/microsoft.com',
+        'website': 'https://microsoft.com'
+    },
+    {
+        'name': 'Google',
+        'description': 'Technology company focused on search, cloud computing, and artificial intelligence.',
+        'logo_url': 'https://logo.clearbit.com/google.com',
+        'website': 'https://google.com'
+    },
+    {
+        'name': 'Meta',
+        'description': 'Social media, virtual reality, and AI-driven digital platforms company.',
+        'logo_url': 'https://logo.clearbit.com/meta.com',
+        'website': 'https://meta.com'
+    },
+    {
+        'name': 'Amazon',
+        'description': 'E-commerce and cloud computing company powering global digital infrastructure.',
+        'logo_url': 'https://logo.clearbit.com/amazon.com',
+        'website': 'https://amazon.com'
+    },
+    {
+        'name': 'Apple',
+        'description': 'Consumer electronics and software company known for premium ecosystem products.',
+        'logo_url': 'https://logo.clearbit.com/apple.com',
+        'website': 'https://apple.com'
+    },
+    {
+        'name': 'Netflix',
+        'description': 'Streaming platform operating large-scale distributed content systems.',
+        'logo_url': 'https://logo.clearbit.com/netflix.com',
+        'website': 'https://netflix.com'
+    },
+    {
+        'name': 'Tesla',
+        'description': 'Electric vehicle and AI-driven robotics and automation company.',
+        'logo_url': 'https://logo.clearbit.com/tesla.com',
+        'website': 'https://tesla.com'
+    },
+    {
+        'name': 'Uber',
+        'description': 'Real-time ride-sharing and mobility technology platform.',
+        'logo_url': 'https://logo.clearbit.com/uber.com',
+        'website': 'https://uber.com'
+    },
+    {
+        'name': 'Airbnb',
+        'description': 'Online marketplace for lodging and travel experiences.',
+        'logo_url': 'https://logo.clearbit.com/airbnb.com',
+        'website': 'https://airbnb.com'
+    },
+    {
+        'name': 'Spotify',
+        'description': 'Music streaming service with large-scale recommendation systems.',
+        'logo_url': 'https://logo.clearbit.com/spotify.com',
+        'website': 'https://spotify.com'
+    },
+    {
+        'name': 'Adobe',
+        'description': 'Creative software and cloud-based digital media solutions provider.',
+        'logo_url': 'https://logo.clearbit.com/adobe.com',
+        'website': 'https://adobe.com'
+    },
+    {
+        'name': 'Salesforce',
+        'description': 'Cloud-based CRM and enterprise business platforms provider.',
+        'logo_url': 'https://logo.clearbit.com/salesforce.com',
+        'website': 'https://salesforce.com'
+    },
+    {
+        'name': 'IBM',
+        'description': 'Enterprise technology company focused on AI, cloud, and research.',
+        'logo_url': 'https://logo.clearbit.com/ibm.com',
+        'website': 'https://ibm.com'
+    },
+    {
+        'name': 'Oracle',
+        'description': 'Enterprise database systems and cloud infrastructure provider.',
+        'logo_url': 'https://logo.clearbit.com/oracle.com',
+        'website': 'https://oracle.com'
+    },
+    {
+        'name': 'NVIDIA',
+        'description': 'Leader in GPU computing and AI acceleration technologies.',
+        'logo_url': 'https://logo.clearbit.com/nvidia.com',
+        'website': 'https://nvidia.com'
+    },
+    {
+        'name': 'LinkedIn',
+        'description': 'Professional networking platform powered by data and analytics.',
+        'logo_url': 'https://logo.clearbit.com/linkedin.com',
+        'website': 'https://linkedin.com'
+    },
+    {
+        'name': 'Stripe',
+        'description': 'Online payment processing and financial APIs provider.',
+        'logo_url': 'https://logo.clearbit.com/stripe.com',
+        'website': 'https://stripe.com'
+    },
+    {
+        'name': 'Atlassian',
+        'description': 'Developer productivity and collaboration tools company.',
+        'logo_url': 'https://logo.clearbit.com/atlassian.com',
+        'website': 'https://atlassian.com'
+    },
+    {
+        'name': 'Snowflake',
+        'description': 'Cloud-native data warehousing and analytics platform.',
+        'logo_url': 'https://logo.clearbit.com/snowflake.com',
+        'website': 'https://snowflake.com'
+    },
+    {
+        'name': 'PayPal',
+        'description': 'Global digital payments and financial technology company.',
+        'logo_url': 'https://logo.clearbit.com/paypal.com',
+        'website': 'https://paypal.com'
+    },
+    {
+        'name': 'Intel',
+        'description': 'Semiconductor company designing processors and system software.',
+        'logo_url': 'https://logo.clearbit.com/intel.com',
+        'website': 'https://intel.com'
+    },
+    {
+        'name': 'SAP',
+        'description': 'Enterprise resource planning and business software provider.',
+        'logo_url': 'https://logo.clearbit.com/sap.com',
+        'website': 'https://sap.com'
+    },
+    {
+        'name': 'TechCorp',
+        'description': 'Software solutions company focusing on scalable application development.',
+        'logo_url': 'https://logo.clearbit.com/techcorp.com',
+        'website': 'https://techcorp.com'
+    },
+    {
+        'name': 'DataFlow Inc',
+        'description': 'Data analytics and machine learning solutions provider.',
+        'logo_url': 'https://logo.clearbit.com/dataflow.com',
+        'website': 'https://dataflow.com'
+    },
+    {
+        'name': 'CloudSystems',
+        'description': 'Cloud infrastructure management and DevOps services company.',
+        'logo_url': 'https://logo.clearbit.com/cloudsystems.com',
+        'website': 'https://cloudsystems.com'
+    },
+    {
+        'name': 'WebDev Studio',
+        'description': 'Agency specializing in full-stack web application development.',
+        'logo_url': 'https://logo.clearbit.com/webdevstudio.com',
+        'website': 'https://webdevstudio.com'
+    }
+]
+
     
     # Sample jobs
     jobs = [
