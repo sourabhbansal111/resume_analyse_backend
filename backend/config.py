@@ -20,7 +20,6 @@ class Config:
     
     # CORS settings
     CORS_ORIGINS = [
-        "https://clever-cv.vercel.app",
-        "http://localhost:3000/"
+        "https://clever-cv.vercel.app"
     ]
 
