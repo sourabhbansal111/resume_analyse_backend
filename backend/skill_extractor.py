@@ -251,27 +251,29 @@ class SkillExtractor:
                     break
         
         return skills_section
-    
+
+
     def _extract_from_skills_section(self, skills_text: str) -> Set[str]:
-        """Extract skills from a dedicated skills section"""
         skills = set()
-        
-        # Split by common delimiters
-        delimiters = [',', ';', '|', '\n', '•', '-']
-        for delimiter in delimiters:
-            if delimiter in skills_text:
-                parts = skills_text.split(delimiter)
-                for part in parts:
-                    skill = part.strip().lower()
-                    if skill and len(skill) > 2:
-                        # Check if it matches known skills
-                        for known_skill in self.technical_skills | self.soft_skills:
-                            if known_skill.lower() in skill or skill in known_skill.lower():
-                                skills.add(known_skill)
-                                break
-                break
-        
+
+        # Split using ALL delimiters
+        parts = re.split(r'[,\n;|\-•]+', skills_text.lower())
+
+        # Sort to make order deterministic
+        known_skills = sorted(self.technical_skills | self.soft_skills, key=str.lower)
+
+        for part in parts:
+            skill = part.strip()
+            if len(skill) <= 2:
+                continue
+
+            for known_skill in known_skills:
+                if skill == known_skill.lower():
+                    skills.add(known_skill)
+                    break
+
         return skills
+
     
     def normalize_skill(self, skill: str) -> str:
         """Normalize skill name (e.g., 'Python' -> 'python')"""
