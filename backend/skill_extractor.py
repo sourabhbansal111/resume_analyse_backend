@@ -191,10 +191,18 @@ class SkillExtractor:
         
         # Extract technical skills
         for skill in self.technical_skills:
-            # Use word boundaries for better matching
-            pattern = r'\b' + re.escape(skill.lower()) + r'\b'
+            skill_lower = skill.lower()
+            escaped_skill = re.escape(skill_lower)
+        
+            # Use \b for normal words, lookarounds for symbol-based skills
+            if skill_lower.isalnum():
+                pattern = r'\b' + escaped_skill + r'\b'
+            else:
+                pattern = r'(?<!\w)' + escaped_skill + r'(?!\w)'
+        
             if re.search(pattern, text_lower, re.IGNORECASE):
                 skills.add(skill)
+
         
         # Extract soft skills
         for skill in self.soft_skills:
