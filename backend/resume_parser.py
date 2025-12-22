@@ -38,7 +38,7 @@ class ResumeParser:
         # Remove excessive whitespace
         text = re.sub(r'\s+', ' ', text)
         # Remove special characters but keep common punctuation
-        text = re.sub(r'[^\w\s\.\,\;\:\-\(\)]', ' ', text)
+        text = re.sub(r'[^\w\s\.\,\;\:\-\+\(\)]', ' ', text)
         # Remove multiple newlines
         text = re.sub(r'\n+', '\n', text)
         return text.strip()
