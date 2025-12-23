@@ -202,7 +202,7 @@ def init_sample_data():
             {'company_name':'IBM','title':'Backend Developer','description':'Build enterprise backend systems.','required_skills':['java','sql','rest api','linux'],'preferred_skills':['microservices','docker'],'experience_level':'Mid','location':'Austin, TX','salary_range':'$110k - $140k'},
 
             # 12
-            {'company_name':'Oracle','title':'Database Engineer','description':'Manage and optimize database systems.','required_skills':['sql','oracle','performance tuning'],'preferred_skills':['pl/sql','linux'],'experience_level':'Senior','location':'Redwood City, CA','salary_range':'$135k - $165k'},
+            {'company_name':'Oracle','title':'Database Engineer','description':'Manage and optimize database systems.','required_skills':['sql','oracle','performance tuning'],'preferred_skills':['sql','linux'],'experience_level':'Senior','location':'Redwood City, CA','salary_range':'$135k - $165k'},
 
             # 13
             {'company_name':'NVIDIA','title':'Machine Learning Engineer','description':'Develop ML models for AI platforms.','required_skills':['python','machine learning','deep learning','pytorch'],'preferred_skills':['cuda','computer vision'],'experience_level':'Senior','location':'Santa Clara, CA','salary_range':'$160k - $200k'},

@@ -171,87 +171,207 @@ class JobMatcher:
         
         # Categorize missing skills
 
+        # =========================
+        # Programming Languages
+        # =========================
         programming_langs = [
             s for s in missing_skills
-            if any(lang in s.lower() for lang in [
-                'python', 'java', 'javascript', 'typescript', 'c++', 'c#',
-                'go', 'rust', 'kotlin', 'swift', 'php', 'ruby', 'scala'
+            if any(k in s.lower() for k in [
+                'python','java','javascript','typescript','c++','c#',' c ',
+                'go','rust','kotlin','swift','php','ruby','scala','perl',
+                'shell','bash','powershell','matlab',' r '
             ])
         ]
 
+        # =========================
+        # Core Computer Science
+        # =========================
         core_cs = [
             s for s in missing_skills
-            if any(cs in s.lower() for cs in [
-                'data structures', 'algorithms', 'oops', 'object oriented',
-                'system design', 'operating systems', 'dbms', 'computer networks'
+            if any(k in s.lower() for k in [
+                'data structures','algorithms','oop','oops',
+                'object oriented programming',
+                'design patterns','system design',
+                'operating systems','computer networks','dbms',
+                'multithreading','concurrency','memory management'
             ])
         ]
 
+        # =========================
+        # Web Fundamentals
+        # =========================
+        web_fundamentals = [
+            s for s in missing_skills
+            if any(k in s.lower() for k in [
+                'html','css','sass','bootstrap','tailwind',
+                'responsive design','cross browser'
+            ])
+        ]
+
+        # =========================
+        # Frontend Frameworks
+        # =========================
         frontend = [
             s for s in missing_skills
-            if any(fe in s.lower() for fe in [
-                'html', 'css', 'react', 'angular', 'vue',
-                'next.js', 'nuxt.js', 'tailwind', 'bootstrap'
+            if any(k in s.lower() for k in [
+                'react','redux','next.js',
+                'angular','vue','nuxt',
+                'vite','webpack'
             ])
         ]
 
+        # =========================
+        # Backend & APIs
+        # =========================
         backend = [
             s for s in missing_skills
-            if any(be in s.lower() for be in [
-                'node', 'express', 'django', 'flask', 'fastapi',
-                'spring', 'spring boot', 'asp.net', 'laravel', 'rails'
+            if any(k in s.lower() for k in [
+                'node.js','express','nestjs',
+                'django','django rest','flask','fastapi',
+                'spring','spring boot',
+                'asp.net','laravel','rails',
+                'rest api','graphql','grpc',
+                'web sockets','api development',
+                'authentication','authorization',
+                'jwt','oauth','session management'
             ])
         ]
 
+        # =========================
+        # Databases
+        # =========================
         databases = [
             s for s in missing_skills
-            if any(db in s.lower() for db in [
-                'sql', 'mysql', 'postgresql', 'mongodb',
-                'redis', 'oracle', 'sqlite', 'dynamodb', 'cassandra', 'neo4j'
+            if any(k in s.lower() for k in [
+                'sql','mysql','postgresql','sqlite','oracle',
+                'mongodb','redis','dynamodb','cassandra',
+                'elasticsearch','neo4j','pl/sql'
             ])
         ]
 
+        # =========================
+        # Cloud & DevOps
+        # =========================
         cloud_devops = [
             s for s in missing_skills
-            if any(cd in s.lower() for cd in [
-                'aws', 'azure', 'gcp',
-                'docker', 'kubernetes',
-                'ci/cd', 'jenkins', 'terraform', 'ansible',
-                'linux'
+            if any(k in s.lower() for k in [
+                'aws','azure','gcp','cloud',
+                'ec2','s3','rds','lambda','cloud functions',
+                'docker','kubernetes',
+                'ci/cd','jenkins','github actions',
+                'terraform','ansible',
+                'linux','unix',
+                'nginx','apache',
+                'load balancing','auto scaling'
             ])
         ]
 
+        # =========================
+        # Monitoring & Logging
+        # =========================
+        monitoring_logging = [
+            s for s in missing_skills
+            if any(k in s.lower() for k in [
+                'monitoring','prometheus','grafana',
+                'elk','log monitoring'
+            ])
+        ]
+
+        # =========================
+        # Testing & QA
+        # =========================
         testing = [
             s for s in missing_skills
-            if any(test in s.lower() for test in [
-                'testing', 'pytest', 'junit',
-                'selenium', 'cypress', 'tdd', 'bdd'
+            if any(k in s.lower() for k in [
+                'unit testing','integration testing',
+                'pytest','junit','jest','mocha',
+                'selenium','cypress',
+                'tdd','bdd','test driven'
             ])
         ]
 
-        data_ai = [
+        # =========================
+        # Data Science & Analytics
+        # =========================
+        data_science = [
             s for s in missing_skills
-            if any(ai in s.lower() for ai in [
-                'machine learning', 'deep learning', 'nlp',
-                'computer vision', 'tensorflow', 'pytorch',
-                'scikit', 'pandas', 'numpy', 'mlops', 'llm'
+            if any(k in s.lower() for k in [
+                'data analysis','data preprocessing',
+                'feature engineering','data modeling',
+                'pandas','numpy','matplotlib','seaborn',
+                'jupyter','etl','statistics'
             ])
         ]
 
+        # =========================
+        # Machine Learning & AI
+        # =========================
+        ml_ai = [
+            s for s in missing_skills
+            if any(k in s.lower() for k in [
+                'machine learning','deep learning',
+                'supervised learning','unsupervised learning',
+                'neural networks',
+                'tensorflow','pytorch','keras','scikit-learn',
+                'nlp','natural language processing',
+                'computer vision','opencv',
+                'transformers','hugging face',
+                'llms','chatbots',
+                'recommendation systems',
+                'model evaluation','model deployment',
+                'mlops','cuda'
+            ])
+        ]
+
+        # =========================
+        # Mobile Development
+        # =========================
+        mobile = [
+            s for s in missing_skills
+            if any(k in s.lower() for k in [
+                'android','ios','react native','flutter','xamarin','xcode'
+            ])
+        ]
+
+        # =========================
+        # Security
+        # =========================
         security = [
             s for s in missing_skills
-            if any(sec in s.lower() for sec in [
-                'security', 'owasp', 'jwt', 'oauth',
-                'xss', 'csrf', 'sql injection', 'encryption'
+            if any(k in s.lower() for k in [
+                'security','web security','cloud security',
+                'owasp','xss','csrf','sql injection',
+                'encryption','hashing'
             ])
         ]
 
+        # =========================
+        # Tools & Collaboration
+        # =========================
         tools = [
             s for s in missing_skills
-            if any(tool in s.lower() for tool in [
-                'git', 'github', 'gitlab', 'jira', 'confluence'
+            if any(k in s.lower() for k in [
+                'git','github','gitlab',
+                'jira','confluence',
+                'code review','pull requests'
             ])
         ]
+
+        # =========================
+        # Software Methodologies & Architecture
+        # =========================
+        methodologies = [
+            s for s in missing_skills
+            if any(k in s.lower() for k in [
+                'agile','scrum','kanban',
+                'microservices',
+                'monolithic',
+                'serverless',
+                'distributed systems',
+                'performance tuning'
+            ])
+        ]
+
         softskill = [
             s for s in missing_skills
             if any(tool in s.lower() for tool in [
@@ -276,11 +396,14 @@ class JobMatcher:
         if core_cs:
             tips.append(f"• Core CS Concepts: {', '.join(core_cs[:3])}")
 
+        if web_fundamentals:
+            tips.append(f"• Web Fundamentals: {', '.join(web_fundamentals[:3])}")
+
         if frontend:
             tips.append(f"• Frontend Skills: {', '.join(frontend[:3])}")
 
         if backend:
-            tips.append(f"• Backend Frameworks: {', '.join(backend[:3])}")
+            tips.append(f"• Backend & APIs: {', '.join(backend[:3])}")
 
         if databases:
             tips.append(f"• Databases: {', '.join(databases[:3])}")
@@ -288,11 +411,20 @@ class JobMatcher:
         if cloud_devops:
             tips.append(f"• Cloud & DevOps: {', '.join(cloud_devops[:3])}")
 
+        if monitoring_logging:
+            tips.append(f"• Monitoring & Logging: {', '.join(monitoring_logging[:3])}")
+
         if testing:
             tips.append(f"• Testing & QA: {', '.join(testing[:3])}")
 
-        if data_ai:
-            tips.append(f"• Data Science & AI: {', '.join(data_ai[:3])}")
+        if data_science:
+            tips.append(f"• Data Science & Analytics: {', '.join(data_science[:3])}")
+
+        if ml_ai:
+            tips.append(f"• Machine Learning & AI: {', '.join(ml_ai[:3])}")
+
+        if mobile:
+            tips.append(f"• Mobile Development: {', '.join(mobile[:3])}")
 
         if security:
             tips.append(f"• Security: {', '.join(security[:3])}")
@@ -300,6 +432,12 @@ class JobMatcher:
         if tools:
             tips.append(f"• Tools & Collaboration: {', '.join(tools[:3])}")
 
+        if methodologies:
+            tips.append(f"• Software Architecture & Practices: {', '.join(methodologies[:3])}")
+
+
+        if softskill:
+            tips.append(f"• Softskill: {', '.join(softskill[:3])}")
         # General tips
         if len(missing_skills) > 5:
             tips.append("• Consider taking online courses or certifications for the missing skills")

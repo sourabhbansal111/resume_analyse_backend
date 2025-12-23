@@ -32,7 +32,8 @@ class SkillExtractor:
                 # =========================
                 # Core Computer Science
                 # =========================
-                'data structures', 'algorithms', 'object oriented programming', 'oops',
+                'data structures', 'algorithms', 'object oriented programming', 'oops','oop',
+                'object oriented programming',
                 'design patterns', 'system design', 'operating systems',
                 'computer networks', 'dbms',
                 'multithreading', 'concurrency', 'memory management',
@@ -157,6 +158,12 @@ class SkillExtractor:
                 'agile', 'scrum', 'kanban',
                 'microservices', 'monolithic architecture',
                 'serverless architecture'
+
+                'firebase','etl','data modeling',
+                'distributed systems','kafka','opencv',
+                'cuda','performance tuning','xcode',
+                'statistics','cloud','monitoring',
+                'security',
             }
 
             # =========================

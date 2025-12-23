@@ -8,7 +8,6 @@ bcrypt==4.1.2
 gunicorn
 spacy
 # Optional packages for enhanced features (install separately if needed):
-# scikit-learn - for advanced ML matching: pip install scikit-learn
-# numpy, pandas - for data processing: pip install numpy pandas
-# spacy - for enhanced NLP: pip install spacy && python -m spacy download en_core_web_sm
-
+scikit-learn 
+numpy
+pandas
